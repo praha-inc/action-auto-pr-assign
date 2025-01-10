@@ -1,0 +1,20 @@
+name: Setup
+description: Setup project
+
+runs:
+  using: composite
+  steps:
+    - name: Setup pnpm
+      uses: pnpm/action-setup@fe02b34f77f8bc703788d5817da081398fad5dd2 # v4.0.0
+
+    - name: Setup Node.js
+      uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4.1.0
+      with:
+        cache: pnpm
+        node-version-file: .node-version
+
+    - name: Install dependencies
+      shell: bash
+      run: |
+        pnpm install --frozen-lockfile --prefer-offline
+        pnpm store prune
