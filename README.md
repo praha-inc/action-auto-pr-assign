@@ -23,11 +23,11 @@ jobs:
     steps:
       - uses: praha-inc/action-assign-reviewers@v1
         with:
-          exclude:
-            - 'dependabot[bot]'
-            - 'renovate[bot]'
-          reviewers:
-            - 'octocat'
+          exclude: |
+            dependabot[bot]
+            renovate[bot]
+          reviewers: |
+            octocat
           token: ${{ secrets.GITHUB_TOKEN }}
 ```
 
