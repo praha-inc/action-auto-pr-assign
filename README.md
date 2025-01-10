@@ -21,13 +21,13 @@ jobs:
     permissions:
       pull-requests: write
     steps:
-      - uses: praha-inc/action-assign-reviewers@v1
+      - uses: praha-inc/action-assign-reviewers@v1.0.1
         with:
-          exclude:
-            - 'dependabot[bot]'
-            - 'renovate[bot]'
-          reviewers:
-            - 'octocat'
+          exclude: |
+            dependabot[bot]
+            renovate[bot]
+          reviewers: |
+            octocat
           token: ${{ secrets.GITHUB_TOKEN }}
 ```
 
