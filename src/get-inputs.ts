@@ -18,9 +18,9 @@ export const getInputs: GetInputs = (context) => {
 
   // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   const author = String(context.payload.pull_request['user']?.login ?? '');
-  const exclude = getMultilineInput('exclude');
-  const reviewers = getMultilineInput('reviewers').filter((reviewer) => reviewer !== author);
-  const token = getInput('GITHUB_TOKEN');
+  const exclude = getMultilineInput('exclude', { required: true });
+  const reviewers = getMultilineInput('reviewers', { required: true }).filter((reviewer) => reviewer !== author);
+  const token = getInput('GITHUB_TOKEN', { required: true });
 
   return {
     author,
