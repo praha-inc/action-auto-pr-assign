@@ -1,0 +1,15 @@
+name: Assign Reviewers
+description: Assign reviewers to PRs opened by bot users
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+inputs:
+  GITHUB_TOKEN:
+    description: 'GitHub Token'
+    required: true
+  exclude:
+    description: 'Exclude users'
+    required: false
+  reviewers:
+    description: 'Reviewers'
+    required: true

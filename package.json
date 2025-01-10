@@ -1,0 +1,35 @@
+{
+  "name": "action-assign-reviewers",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "ncc build src/index.ts --out dist --transpile-only --minify",
+    "test": "vitest --run",
+    "lint": "pnpm run \"/lint:.+/\"",
+    "lint:code": "eslint",
+    "lint:type": "tsc --noEmit",
+    "version": "changeset",
+    "version:apply": "changeset version",
+    "version:publish": "changeset tag"
+  },
+  "dependencies": {
+    "@actions/core": "1.11.1",
+    "@actions/github": "6.0.0"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "0.5.0",
+    "@changesets/cli": "2.27.11",
+    "@praha/eslint-config-common": "4.0.1",
+    "@praha/eslint-config-definer": "2.0.1",
+    "@praha/eslint-config-javascript": "3.0.1",
+    "@praha/eslint-config-style": "3.0.2",
+    "@praha/eslint-config-typescript": "3.0.2",
+    "@tsconfig/node20": "20.1.4",
+    "@tsconfig/strictest": "2.0.5",
+    "@vercel/ncc": "0.38.3",
+    "eslint": "9.17.0",
+    "typescript": "5.7.3",
+    "vitest": "2.1.8"
+
+  },
+  "packageManager": "pnpm@9.15.3+sha512.1f79bc245a66eb0b07c5d4d83131240774642caaa86ef7d0434ab47c0d16f66b04e21e0c086eb61e62c77efc4d7f7ec071afad3796af64892fae66509173893a"
+}
