@@ -1,4 +1,4 @@
-# action-assign-reviewers
+# action-auto-pr-assign
 
 ## 1.1.0
 

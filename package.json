@@ -1,5 +1,5 @@
 {
-  "name": "action-assign-reviewers",
+  "name": "action-auto-pr-assign",
   "version": "1.1.0",
   "scripts": {
     "build": "ncc build src/index.ts --out dist --transpile-only --minify",
