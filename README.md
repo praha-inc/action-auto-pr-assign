@@ -3,14 +3,14 @@
 [![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/praha-inc/action-auto-pr-assign/blob/main/LICENSE)
 [![Github](https://img.shields.io/github/followers/praha-inc?label=Follow&logo=github&style=social)](https://github.com/orgs/praha-inc/followers)
 
-This action assigns reviewers to the pull request only created by the user.
+This action assigns reviewers and sets assignee to the pull request only created by the user.
 
 ## 👏 Getting Started
 
 Create a workflow file under ```.github/workflows``` directory.
 
 ```yaml
-name: Assign Reviewer
+name: Assign Reviewers and Assignees to Pull Request
 on:
   pull_request_target:
     types: [opened]
