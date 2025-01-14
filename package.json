@@ -1,6 +1,6 @@
 {
   "name": "action-auto-pr-assign",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "scripts": {
     "build": "ncc build src/index.ts --out dist --transpile-only --minify",
     "test": "vitest --run",

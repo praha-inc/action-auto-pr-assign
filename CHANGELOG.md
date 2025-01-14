@@ -1,5 +1,11 @@
 # action-auto-pr-assign
 
+## 1.2.1
+
+### Patch Changes
+
+- 81123ad: リポジトリ名のリネームに漏れがあったので追加
+
 ## 1.2.0
 
 ### Minor Changes
