@@ -1,5 +1,5 @@
-name: Assign Reviewers
-description: Assign reviewers to PRs opened by bot users
+name: Auto PR Assign
+description: Assign reviewers and set assignee to PRs opened by bot users
 runs:
   using: 'node20'
   main: 'dist/index.js'
