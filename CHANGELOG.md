@@ -1,5 +1,11 @@
 # action-auto-pr-assign
 
+## 1.2.0
+
+### Minor Changes
+
+- a49f13b: assign-reviewer→auto-pr-assign にリネーム
+
 ## 1.1.0
 
 ### Minor Changes
