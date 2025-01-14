@@ -1,6 +1,6 @@
-# action-assign-reviewers
+# action-auto-pr-assign
 
-[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/praha-inc/action-assign-reviewers/blob/main/LICENSE)
+[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/praha-inc/action-auto-pr-assign/blob/main/LICENSE)
 [![Github](https://img.shields.io/github/followers/praha-inc?label=Follow&logo=github&style=social)](https://github.com/orgs/praha-inc/followers)
 
 This action assigns reviewers to the pull request only created by the user.
@@ -16,12 +16,12 @@ on:
     types: [opened]
 
 jobs:
-  assign-reviewers:
+  auto-pr-assign:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
     steps:
-      - uses: praha-inc/action-assign-reviewers@v1.0.1
+      - uses: praha-inc/action-auto-pr-assign@v1.2.0
         with:
           exclude: |
             dependabot[bot]
@@ -45,10 +45,10 @@ The action assigns reviewers to the pull request.
 
 Contributions, issues and feature requests are welcome.
 
-Feel free to check [issues page](https://github.com/praha-inc/action-assign-reviewers/issues) if you want to contribute.
+Feel free to check [issues page](https://github.com/praha-inc/action-auto-pr-assign/issues) if you want to contribute.
 
 ## 📝 License
 
 Copyright © 2020 [PrAha](https://www.praha-inc.com/).
 
-This project is [```MIT```](https://github.com/praha-inc/action-assign-reviewers/blob/main/LICENSE) licensed.
+This project is [```MIT```](https://github.com/praha-inc/action-auto-pr-assign/blob/main/LICENSE) licensed.
