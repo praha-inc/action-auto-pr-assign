@@ -1,5 +1,11 @@
 # action-assign-reviewers
 
+## 1.1.0
+
+### Minor Changes
+
+- 45fd904: assignee も設定するようにした
+
 ## 1.0.1
 
 ### Patch Changes
