@@ -21,7 +21,7 @@ jobs:
     permissions:
       pull-requests: write
     steps:
-      - uses: praha-inc/action-auto-pr-assign@v1.2.0
+      - uses: praha-inc/action-auto-pr-assign@v1.2.2
         with:
           exclude: |
             dependabot[bot]
