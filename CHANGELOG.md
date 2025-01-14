@@ -1,5 +1,11 @@
 # action-auto-pr-assign
 
+## 1.2.2
+
+### Patch Changes
+
+- ac08623: Assignee を設定する変更の時にビルドを忘れていたのでビルド
+
 ## 1.2.1
 
 ### Patch Changes
