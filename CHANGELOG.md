@@ -1,5 +1,11 @@
 # action-auto-pr-assign
 
+## 1.3.0
+
+### Minor Changes
+
+- 9adbe86: Author が除外リストに含まれていた時例外を投げるのをやめた
+
 ## 1.2.2
 
 ### Patch Changes

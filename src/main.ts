@@ -18,7 +18,8 @@ export const main: Main = async ({
   }
 
   if (exclude.includes(author)) {
-    throw new Error(`This PR is created by ${author}`);
+    console.log(`This PR is created by ${author}`);
+    return;
   }
 
   const octokit = getOctokit(token);
