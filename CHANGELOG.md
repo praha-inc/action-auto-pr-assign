@@ -1,5 +1,11 @@
 # action-auto-pr-assign
 
+## 1.4.0
+
+### Minor Changes
+
+- 519ef7e: 1 つの操作が失敗しても残りの操作は実行されるようにした
+
 ## 1.3.0
 
 ### Minor Changes
