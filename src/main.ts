@@ -24,7 +24,7 @@ export const main: Main = async ({
 
   const octokit = getOctokit(token);
 
-  await Promise.all([
+  const results = await Promise.allSettled([
     octokit.rest.issues.addAssignees({
       owner: context.repo.owner,
       repo: context.repo.repo,
@@ -38,4 +38,9 @@ export const main: Main = async ({
       reviewers,
     }),
   ]);
+
+  results.forEach((result) => {
+    if (result.status === 'fulfilled') return;
+    console.error(result.reason);
+  });
 };
